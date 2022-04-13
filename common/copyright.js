@@ -13,6 +13,8 @@ window.addEventListener("load", () => {
     const a = document.createElement("a");
     a.href = url;
     a.innerText = `Copyright (c) ${year} ${name}`;
-    a.classList.add("copyright")
+
+    a.style = script.style;
+    a.classList.add(...script.classList.values(), "copyright");
     document.body.appendChild(a);
 });
