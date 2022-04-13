@@ -35,6 +35,10 @@
     overflow: hidden;
 }
 
+.no-background {
+    background-color: transparent;
+}
+
 .copyright, .copyright:visited {
     user-select: none;
     font-size: medium;
