@@ -35,7 +35,7 @@
     overflow: hidden;
 }
 
-.repo-link, .repo-link:visited {
+.copyright, .copyright:visited {
     user-select: none;
     font-size: medium;
     position: fixed;
