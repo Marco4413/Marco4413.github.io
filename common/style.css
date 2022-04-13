@@ -1,0 +1,46 @@
+/* MIT Copyright (c) 2022 [hds536jhmk](https://github.com/hds536jhmk/hds536jhmk) */
+/* Common Styles for my Web Pages */
+
+/* LICENSE: https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.big-font {
+    font-size: 20pt;
+}
+
+.medium-font {
+    font-size: 16pt;
+}
+
+.small-font {
+    font-size: 12pt;
+}
+
+.center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.repo-link, .repo-link:visited {
+    user-select: none;
+    font-size: medium;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    margin: 5px;
+}
