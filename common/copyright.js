@@ -1,4 +1,4 @@
-/* MIT Copyright (c) 2022 [hds536jhmk](https://github.com/hds536jhmk/hds536jhmk) */
+/* MIT Copyright (c) 2022 [Marco4413](https://github.com/Marco4413) */
 /* This script appends a copyright notice with a ref url to the document's body */
 
 const script = document.currentScript;
