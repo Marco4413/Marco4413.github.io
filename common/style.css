@@ -6,10 +6,13 @@
 
 * {
     font-family: 'JetBrains Mono', monospace;
-    background-color: rgb(10, 10, 10);
     color: white;
     padding: 0px;
     margin: 0px;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
 }
 
 .big-font {
