@@ -4,15 +4,12 @@
 /* LICENSE: https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
-* {
+.darktheme, .darktheme * {
     font-family: 'JetBrains Mono', monospace;
     color: white;
+    background-color: rgb(10, 10, 10);
     padding: 0px;
     margin: 0px;
-}
-
-body {
-    background-color: rgb(10, 10, 10);
 }
 
 .big-font {
