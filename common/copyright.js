@@ -1,6 +1,9 @@
 /* MIT Copyright (c) 2022 [Marco4413](https://github.com/Marco4413) */
 /* This script appends a copyright notice with a ref url to the document's body */
 
+console.warn("USING DEPRECATED VERSION OF copyright.js FROM https://Marco4413.github.io");
+console.warn("ANY REFERENCE TO copyright.js SHOULD POINT TO https://Marco4413.github.io/static/js/copyright.js");
+
 const script = document.currentScript;
 window.addEventListener("load", () => {
     const urlMatcher = /^(?:https?:\/\/)?((?:www\.)?([^.]+)\.[^/]*)\/?.*$/g;
