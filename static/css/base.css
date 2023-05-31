@@ -7,6 +7,7 @@
     --background-color-darker: #010704;
     --background-color-dark: #222a30;
     --background-color-light: #38404c;
+    --hover-color-light: #373737;
     --link-color: #6f9ccf;
     --link-color-visited: #869dd9;
     --color-emphasis: #e86258;
@@ -90,3 +91,23 @@ a:visited { color: var(--link-color-visited); }
     margin: 5px;
 }
 
+.button, button, input {
+    margin: 2px;
+    box-sizing: border-box;
+    font-size: 10pt;
+    background-color: var(--background-color-dark);
+    border: 2px solid var(--background-color-dark);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.button:hover, button:hover, input:hover {
+    background-color: var(--hover-color-light);
+}
+
+.button:hover, button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    border-color: var(--hover-color-light);
+}
