@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+
+    <link id="style" rel="stylesheet" href="/static/css/auto.css">
+    <script src="/static/js/copyright.js" url="https://github.com/Marco4413" name="Marco4413" year="2023"></script>
+    <script src="/static/js/theme-toggle.js"></script>
+</head>
+<body>
+    <theme-toggle value="Dark Theme: " light-href="/static/css/light.css" dark-href="/static/css/dark.css" auto-apply></theme-toggle>
+    <form>
+        <div>
+            <label for="reg-username">Username</label>
+            <input required type="text" name="username" id="reg-username">
+        </div>
+        <div>
+            <label for="reg-password">Password</label>
+            <input required type="password" name="password" id="reg-password">
+        </div>
+        <div>
+            <label for="reg-age">Age</label>
+            <input required type="date" name="age" id="reg-age">
+        </div>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <button>Button</button>
+    </form>
+</body>
+</html>
