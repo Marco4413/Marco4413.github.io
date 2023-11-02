@@ -3,6 +3,8 @@
 @import url('/static/css/base.css');
 
 :root {
+    /* 0: Dark, 1: Light */
+    --color-scheme: 1;
     --background-color-darker: #e5e1e0;
     --background-color-dark: #b0adb0;
     --background-color-light: #38404c;
