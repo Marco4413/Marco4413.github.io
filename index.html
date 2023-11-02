@@ -37,6 +37,18 @@
             height: 250px;
             max-height: 25vw;
         }
+
+        @keyframes -logo-background-color {
+            from { background-color: var(--text-color-light); }
+            to { background-color: transparent; }
+        }
+
+        .logo-background-color {
+            animation: -logo-background-color 1s paused;
+            /* Not even close to stopping me from doing conditional style based on vars within CSS. */
+            animation-delay: calc(var(--color-scheme) * 1s);
+        }
+
     </style>
 </head>
 <body class="padding-10px padding-bottom-50px">
@@ -51,7 +63,7 @@
         <hr>
     </div>
 
-    <theme-toggle id="dark-mode" style-id="style" value="Dark Mode "></theme-toggle>
+    <theme-toggle id="dark-mode" style-id="style" light-href="/static/css/light.css" dark-href="/static/css/dark.css" value="Dark Mode "></theme-toggle>
     <hr>
 
     <h2>About Me</h2>
@@ -74,7 +86,7 @@
     </div>
     <div class="container-inline margin-top-10px">
         <span class="flex-align-center padding-right-10px">3.</span>
-        <img style="height: 2em;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original-wordmark.svg">
+        <img class="shape-circle logo-background-color" style="height: 2em; overflow: visible;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original-wordmark.svg">
         <div vr></div>
         <span class="flex-align-center padding-right-10px">Lua (where it all started)</span>
     </div>
