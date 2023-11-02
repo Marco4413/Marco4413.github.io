@@ -33,6 +33,12 @@ body { background-color: var(--background-color-darker); }
 .color-dark { color: var(--text-color-dark); }
 .color-light { color: var(--text-color-light); }
 
+.shape-circle {
+    box-sizing: border-box;
+    border: 0px transparent;
+    border-radius: 50%;
+}
+
 .sticky-top { position: sticky; top: 0px; }
 
 .container-inline { display: flex; }
