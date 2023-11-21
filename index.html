@@ -23,33 +23,7 @@
     <script src="/static/js/copyright.js" url="https://github.com/Marco4413" name="Marco4413" year="2023"></script>
     <script src="/static/js/theme-toggle.js"></script>
 
-    <style>
-        .logo-container {
-            display: flex;
-            align-items: center;
-            width: 250px;
-            max-width: 25vw;
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .logo-container > * {
-            height: 250px;
-            max-height: 25vw;
-        }
-
-        @keyframes -logo-background-color {
-            from { background-color: var(--text-color-light); }
-            to { background-color: transparent; }
-        }
-
-        .logo-background-color {
-            animation: -logo-background-color 1s paused;
-            /* Not even close to stopping me from doing conditional style based on vars within CSS. */
-            animation-delay: calc(var(--color-scheme) * 1s);
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="padding-10px padding-bottom-50px">
     <div class="background-darker sticky-top">
@@ -86,7 +60,7 @@
     </div>
     <div class="container-inline margin-top-10px">
         <span class="flex-align-center padding-right-10px">3.</span>
-        <img class="shape-circle logo-background-color" style="height: 2em; overflow: visible;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original-wordmark.svg">
+        <img class="shape-circle tool-logo-background-color" style="height: 2em; overflow: visible;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original-wordmark.svg">
         <div vr></div>
         <span class="flex-align-center padding-right-10px">Lua (where it all started)</span>
     </div>
@@ -100,9 +74,9 @@
     <hr>
     <h2>Some of my best projects</h2>
 
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://github.com/Marco4413/png" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="/static/assets/logos/png.png">
             </div>
         </a>
@@ -116,9 +90,9 @@
         </div>
     </div>
     
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://github.com/Marco4413/ProcessorEmulator" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="/static/assets/logos/pemu.png">
             </div>
         </a>
@@ -131,9 +105,9 @@
         </div>
     </div>
     
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://Marco4413.github.io/MediaAsciifier" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="/static/assets/logos/media-asciifier.png">
             </div>
         </a>
@@ -145,9 +119,9 @@
         </div>
     </div>
     
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://github.com/Marco4413/JackBot" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="/static/assets/logos/jackbot.png">
             </div>
         </a>
@@ -160,9 +134,9 @@
         </div>
     </div>
     
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://github.com/Marco4413/YAGUI" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="https://github.com/Marco4413/YAGUI/raw/master/screenshots/YAGUI_Note_1.gif">
             </div>
         </a>
@@ -178,9 +152,9 @@
     <hr>
     <h2>Other projects</h2>
     
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://Marco4413.github.io/GameOfLife" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="/static/assets/logos/gol.png">
             </div>
         </a>
@@ -192,9 +166,9 @@
         </div>
     </div>
     
-    <div class="margin-top-10px background-dark container-inline">
+    <div class="project-container margin-top-10px background-dark">
         <a href="https://Marco4413.github.io/Fractals" class="flex-align-center">
-            <div class="logo-container">
+            <div class="project-logo-container">
                 <img src="/static/assets/logos/fractals.png">
             </div>
         </a>

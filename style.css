@@ -1,0 +1,57 @@
+/* Style for https://Marco4413.github.io */
+
+@keyframes -tool-logo-background-color {
+    from { background-color: var(--text-color-light); }
+    to { background-color: transparent; }
+}
+
+.tool-logo-background-color {
+    animation: -tool-logo-background-color 1s paused;
+    /* Not even close to stopping me from doing conditional style based on vars within CSS. */
+    animation-delay: calc(var(--color-scheme) * 1s);
+}
+
+.project-logo-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-logo-container > * {
+    width: 250px;
+    max-width: 25vh;
+    height: 250px;
+    max-height: 25vh;
+}
+
+.project-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.project-container > div[vr]:empty {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-logo-container > * {
+        width: 250px;
+        max-width: 25vw;
+        height: 250px;
+        max-height: 25vw;
+    }
+
+    .project-container {
+        padding: initial;
+        flex-direction: row;
+        align-items: initial;
+    }
+
+    .project-container > div[vr]:empty {
+        display: initial;
+    }
+}
