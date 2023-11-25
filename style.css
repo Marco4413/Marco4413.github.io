@@ -19,7 +19,8 @@
     width: 100%;
 }
 
-.project-logo-container > * {
+.project-logo-container > img {
+    border-radius: 5px 5px 0px 0px;
     width: 250px;
     max-width: 25vh;
     height: 250px;
@@ -27,6 +28,7 @@
 }
 
 .project-container {
+    border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,8 @@ div[splitr]:empty {
 }
 
 @media only screen and (min-width: 768px) {
-    .project-logo-container > * {
+    .project-logo-container > img {
+        border-radius: 5px 0px 0px 5px;
         width: 250px;
         max-width: 25vw;
         height: 250px;
@@ -54,7 +57,7 @@ div[splitr]:empty {
     }
 
     .project-container {
-        padding: initial;
+        padding: 3px;
         flex-direction: row;
         align-items: initial;
     }
