@@ -12,19 +12,26 @@
 }
 
 .project-logo-container {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
 }
 
-.project-logo-container > img {
+.project-logo-container a {
+    /* If not set to flex, for some unknown reason,
+        the browser adds a bit of padding on the bottom.
+       Tried setting 'text-decoration: none' but that didn't fix it. 
+     */
+    display: flex;
+}
+
+.project-logo-container img {
     border-radius: 5px 5px 0px 0px;
+    aspect-ratio: 1;
     width: 250px;
-    max-width: 25vh;
-    height: 250px;
-    max-height: 25vh;
+    max-width: max(25vw, 25vh);
+    height: auto;
 }
 
 .project-container {
@@ -44,19 +51,15 @@
 
 div[splitr]:empty {
     display: inline-block;
-    width: 100%;
+    width: auto;
     height: 2px;
     margin: 8px 0px 8px 0px;
     background-color: var(--text-color-light);
 }
 
 @media only screen and (min-width: 768px) {
-    .project-logo-container > img {
+    .project-logo-container img {
         border-radius: 5px 0px 0px 5px;
-        width: 250px;
-        max-width: 25vw;
-        height: 250px;
-        max-height: 25vw;
     }
 
     .project-container {
