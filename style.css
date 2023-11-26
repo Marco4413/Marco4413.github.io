@@ -44,7 +44,7 @@ div[splitr]:empty {
     width: 100%;
     height: 2px;
     margin: 8px 0px 8px 0px;
-    background-color: white;
+    background-color: var(--text-color-light);
 }
 
 @media only screen and (min-width: 768px) {
