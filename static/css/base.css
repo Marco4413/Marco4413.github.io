@@ -52,16 +52,15 @@ body { background-color: var(--background-color-darker); }
 .flex-fill { flex-grow: 1; }
 
 div[vr]:empty {
-    display: inline;
+    display: inline-block;
     margin: 0px 8px 0px 8px;
+    min-height: 1em;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
     min-width: 2px;
-    width: 2px;
+    max-width: 2px;
     background-color: var(--text-color-light);
-}
-
-div[vr]:empty::after {
-    font-size: 1em;
-    content: '\00A0'; /* &nbsp; */
 }
 
 .no-margin { margin: 0px; }
