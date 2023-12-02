@@ -5,6 +5,24 @@
     to { background-color: transparent; }
 }
 
+.page-title {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
+
+.avatar-container { display: contents; }
+.avatar-container img { align-self: center; }
+
+.page-name-container > * {
+    /* TODO: Figure out why div.page-name-container doesn't shrink to fit wrapped text.
+        I WANT IT CENTERED, DAMN IT! Real web dev moment.
+    */
+    vertical-align: middle;
+}
+
 .tool-logo-background-color {
     animation: -tool-logo-background-color 1s paused;
     /* Not even close to stopping me from doing conditional style based on vars within CSS. */
