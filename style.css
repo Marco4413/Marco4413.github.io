@@ -48,7 +48,9 @@
 div[splitr]:empty {
     display: inline-block;
     width: auto;
-    height: 2px;
+    height: auto;
+    min-height: 2px;
+    max-height: 2px;
     margin: 8px 0px 8px 0px;
     background-color: var(--text-color-light);
 }
@@ -67,7 +69,8 @@ div[splitr]:empty {
     div[splitr]:empty {
         min-width: 2px;
         max-width: 2px;
-        height: initial;
+        min-height: unset;
+        max-height: unset;
         margin: 7px 8px 7px 8px;
     }
 }
