@@ -19,11 +19,7 @@
 }
 
 .project-logo-container a {
-    /* If not set to flex, for some unknown reason,
-        the browser adds a bit of padding on the bottom.
-       Tried setting 'text-decoration: none' but that didn't fix it. 
-     */
-    display: flex;
+    display: contents;
 }
 
 .project-logo-container img {
