@@ -26,7 +26,7 @@
     border-radius: 5px 5px 0px 0px;
     aspect-ratio: 1;
     width: 250px;
-    max-width: max(25vw, 25vh);
+    max-width: 100%;
     height: auto;
 }
 
@@ -58,6 +58,10 @@ div[splitr]:empty {
 @media only screen and (min-width: 768px) {
     .project-logo-container img {
         border-radius: 5px 0px 0px 5px;
+        width: auto;
+        max-width: unset;
+        height: 250px;
+        max-height: 100%;
     }
 
     .project-container {
