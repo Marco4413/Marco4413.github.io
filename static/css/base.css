@@ -18,13 +18,15 @@
 }
 
 * {
-    font-family: 'JetBrains Mono', Consolas, Courier, monospace;
-    color: var(--text-color-light);
     text-emphasis-color: var(--color-emphasis);
     text-decoration-color: var(--color-emphasis);
 }
 
-body { background-color: var(--background-color-darker); }
+body {
+    font-family: 'JetBrains Mono', Consolas, Courier, monospace;
+    color: var(--text-color-light);
+    background-color: var(--background-color-darker);
+}
 
 .background-darker { background-color: var(--background-color-darker); }
 .background-dark { background-color: var(--background-color-dark); }
