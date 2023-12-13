@@ -18,7 +18,7 @@
 }
 
 * {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', Consolas, Courier, monospace;
     color: var(--text-color-light);
     text-emphasis-color: var(--color-emphasis);
     text-decoration-color: var(--color-emphasis);
