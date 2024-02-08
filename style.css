@@ -14,7 +14,11 @@
 }
 
 .avatar-container { display: contents; }
-.avatar-container img { align-self: center; }
+.avatar-container > img {
+    align-self: center;
+    width: auto;
+    height: 1.5em;
+}
 
 .page-name-container > * {
     /* TODO: Figure out why div.page-name-container doesn't shrink to fit wrapped text.
@@ -27,6 +31,11 @@
     animation: -tool-logo-background-color 1s paused;
     /* Not even close to stopping me from doing conditional style based on vars within CSS. */
     animation-delay: calc(var(--color-scheme) * 1s);
+}
+
+.tool-logo {
+    width: auto;
+    height: 2em;
 }
 
 .project-logo-container {
