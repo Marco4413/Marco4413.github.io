@@ -1,6 +1,6 @@
 /* Style for https://Marco4413.github.io */
 
-@keyframes -tool-logo-background-color {
+@keyframes -force-light-background-anim {
     from { background-color: var(--text-color-light); }
     to { background-color: transparent; }
 }
@@ -27,8 +27,8 @@
     vertical-align: middle;
 }
 
-.tool-logo-background-color {
-    animation: -tool-logo-background-color 1s paused;
+.force-light-background {
+    animation: -force-light-background-anim 1s paused;
     /* Not even close to stopping me from doing conditional style based on vars within CSS. */
     animation-delay: calc(var(--color-scheme) * 1s);
 }
