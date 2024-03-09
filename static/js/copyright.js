@@ -5,7 +5,7 @@
     const script = document.currentScript;
     window.addEventListener("load", () => {
         const urlMatcher = /^(?:https?:\/\/)?((?:www\.)?([^.]+)\.[^/]*)\/?.*$/g;
-        const [ _, rootDocumentUrl, ioGithubName ] = urlMatcher.exec(window.location.href);
+        const [ _, rootDocumentUrl, ioGithubName ] = urlMatcher.exec(window.location.href) ?? [];
         
         const url = script.attributes.getNamedItem("url")?.value ?? "/";
         const name = script.attributes.getNamedItem("name")?.value ?? ioGithubName;
