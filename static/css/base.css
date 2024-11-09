@@ -103,6 +103,16 @@ a:visited { color: var(--link-color-visited); }
     margin: 5px;
 }
 
+select {
+    padding: 2pt;
+    box-sizing: border-box;
+    color: var(--background-color-lighter);
+    background-color: var(--background-color-darker);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--background-color-light);
+}
+
 .button, button, input {
     margin: 2px;
     box-sizing: border-box;
