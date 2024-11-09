@@ -10,6 +10,7 @@
     --background-color-dark: #222a30;
     --background-color-light: #38404c;
     --hover-color-light: #373737;
+    --press-color-light: #272727;
     --link-color: #6f9ccf;
     --link-color-visited: #869dd9;
     --color-emphasis: #e86258;
@@ -121,6 +122,14 @@ input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
     border-color: var(--hover-color-light);
+}
+
+.button:active, button:active,
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active {
+    border-color: var(--press-color-light);
+    background-color: var(--press-color-light);
 }
 
 table { border-collapse: collapse; }
