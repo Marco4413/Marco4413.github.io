@@ -4,6 +4,7 @@ import {
     AnimatableInsertionSort,
     AnimatableMergeSort,
     AnimatableQuickSort,
+    AnimatableHeapSort,
 } from "https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/sorting.js";
 
 window.addEventListener("load", () => {
@@ -20,6 +21,7 @@ function* GeneratorCanvasAnimation(c) {
         AnimatableInsertionSort,
         AnimatableMergeSort,
         AnimatableQuickSort,
+        AnimatableHeapSort,
     ];
 
     const sortOpt = {
