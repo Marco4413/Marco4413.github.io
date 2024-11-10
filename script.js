@@ -1,6 +1,7 @@
 import * as a from "https://Marco4413.github.io/GeneratorCanvas/animation.js";
 import {
     SortingAnimation,
+    AnimatableBubbleSort,
     AnimatableInsertionSort,
     AnimatableMergeSort,
     AnimatableQuickSort,
@@ -18,15 +19,16 @@ window.addEventListener("load", () => {
 function* GeneratorCanvasAnimation(c) {
     let sorterI = 0;
     const sorters = [
-        AnimatableInsertionSort,
         AnimatableMergeSort,
         AnimatableQuickSort,
         AnimatableHeapSort,
+        AnimatableInsertionSort,
+        AnimatableBubbleSort,
     ];
 
     const sortOpt = {
         sorter: sorters[sorterI],
-        stepDelay: 0.05,
+        updateDelay: 0.05,
         itemCount: 16,
         stopAtEnd: true,
     };
