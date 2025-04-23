@@ -1,12 +1,5 @@
 import * as a from "https://Marco4413.github.io/GeneratorCanvas/animation.js";
-import {
-    SortingAnimation,
-    AnimatableBubbleSort,
-    AnimatableInsertionSort,
-    AnimatableMergeSort,
-    AnimatableQuickSort,
-    AnimatableHeapSort,
-} from "https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/sorting.js";
+import { Animatable, SortingAnimation } from "https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/sorting.js";
 
 window.addEventListener("load", () => {
     const $generatorCanvas = document.getElementById("project_generator-canvas");
@@ -18,12 +11,13 @@ window.addEventListener("load", () => {
 
 function* GeneratorCanvasAnimation(c) {
     let sorterI = 0;
+    // I could use Object.values(Animatable) but I want a specific order.
     const sorters = [
-        AnimatableMergeSort,
-        AnimatableQuickSort,
-        AnimatableHeapSort,
-        AnimatableInsertionSort,
-        AnimatableBubbleSort,
+        Animatable.MergeSort,
+        Animatable.QuickSort,
+        Animatable.HeapSort,
+        Animatable.InsertionSort,
+        Animatable.BubbleSort,
     ];
 
     const sortOpt = {
