@@ -85,239 +85,173 @@
     <hr>
     <h2>Some of my best projects</h2>
 
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://github.com/Marco4413/png">
-                <img src="/static/assets/logos/png.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/png">png</a>
-                <tool-logo icon="c++"></tool-logo>
-            </h3>
-            <p>A C++20 library which allows for easy reading and writing of PNG images.</p>
-            <p>Other than reading and writing images, it's got some built-in filters and effects like Gaussian Blur, Image Sharpening, Dithering, ... Most of these are also multi-threaded.</p>
-            <p>It's the first 'big project' I have written in C++.</p>
-            <p>The 'logo' is cropped and exported using the library. It's also using a palette limited to roughly 250 colors.</p>
-        </div>
-    </div>
+    <project href="https://github.com/Marco4413/png"
+             logo-kind="image"
+             logo-url="/static/assets/logos/png.png">
+        <h3>
+            <a href="{href}">png</a>
+            <tool-logo icon="c++"></tool-logo>
+        </h3>
+        <p>A C++20 library which allows for easy reading and writing of PNG images.</p>
+        <p>Other than reading and writing images, it's got some built-in filters and effects like Gaussian Blur, Image Sharpening, Dithering, ... Most of these are also multi-threaded.</p>
+        <p>It's the first 'big project' I have written in C++.</p>
+        <p>The 'logo' is cropped and exported using the library. It's also using a palette limited to roughly 250 colors.</p>
+    </project>
 
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://github.com/Marco4413/Pulsar">
-                <img src="/static/assets/logos/pulsar.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/Pulsar">Pulsar</a>
-                <tool-logo icon="c++"></tool-logo>
-            </h3>
-            <p>A new scripting language written in C++20!</p>
-            <p>It's my second attempt at writing a programming language (PEMU was my first one).</p>
-            <p>
-                This time it's stack-based and very similar to WASM internally.
-                And like WASM, it's supposed to be used as an extension of a proper programming language.
-                Which means it supports native code execution thanks to native function bindings.
-            </p>
-            <p>
-                One of the selling features is its near infinite recursion capabilities (at runtime no recursion is used by the interpreter).
-                You must run out of RAM first!
-            </p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://github.com/Marco4413/ProcessorEmulator">
-                <img src="/static/assets/logos/pemu.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/ProcessorEmulator">PEMU (Processor Emulator)</a>
-                <tool-logo icon="java"></tool-logo>
-            </h3>
-            <p>PEMU is an application written using Java and its Swing GUI Framework. It aims at 'emulating' how a processor would work.</p>
-            <p>It's basically a new programming language which works by mutating and reading (instructions/data) the contents of an array (memory).</p>
-            <p>A cool feature is that, since program and data are stored in the same place, a PEMU application can mutate itself through code. This feature is used to retrieve pointers from memory.</p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://Marco4413.github.io/MediaAsciifier">
-                <img src="/static/assets/logos/media-asciifier.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/MediaAsciifier">Media Asciifier</a>
-                <tool-logo icon="javascript"></tool-logo>
-            </h3>
-            <p>This is a Media to 'Ascii' (any text the browser supports) converter that works on the web.</p>
-            <p>It's able to convert images and <b>videos</b> at a decent speed, which allows real-time video conversion (and playback).</p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://github.com/Marco4413/Text2Image">
-                <img src="/static/assets/logos/t2i.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/Text2Image">Text2Image</a>
-                <tool-logo icon="python"></tool-logo>
-            </h3>
-            <p>This Python script and module allows for bulk text to image conversions.</p>
-            <p>It's original intent was to allow for easy generation of digits for smartwatches watchfaces.</p>
-            <p>However, it grew into an all-purpose script for generating all kinds of text. It may very well be my go-to logo generator for my projects!</p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://Marco4413.github.io/GeneratorCanvas">
-                <canvas id="project_generator-canvas"></canvas>
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/GeneratorCanvas">GeneratorCanvas</a>
-                <tool-logo icon="javascript"></tool-logo>
-            </h3>
-            <p>A JavaScript library inspired by <a href="https://github.com/motion-canvas/motion-canvas">Motion Canvas</a>.</p>
-            <p>It uses JS generators to render animations. This allows the programmer to keep the state of the animation within a function scope.</p>
-            <p>The 'logo' is rendered using the library. The animation is from the <a href="https://marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/">Sorting Algorithms example</a>.</p>
-        </div>
-    </div>
+    <project href="https://github.com/Marco4413/Pulsar"
+             logo-kind="image"
+             logo-url="/static/assets/logos/pulsar.png">
+        <h3>
+            <a href="{href}">Pulsar</a>
+            <tool-logo icon="c++"></tool-logo>
+        </h3>
+        <p>A new scripting language written in C++20!</p>
+        <p>It's my second attempt at writing a programming language (PEMU was my first one).</p>
+        <p>
+            This time it's stack-based and very similar to WASM internally.
+            And like WASM, it's supposed to be used as an extension of a proper programming language.
+            Which means it supports native code execution thanks to native function bindings.
+        </p>
+        <p>
+            One of the selling features is its near infinite recursion capabilities (at runtime no recursion is used by the interpreter).
+            You must run out of RAM first!
+        </p>
+    </project>
 
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://github.com/Marco4413/JackBot">
-                <img src="/static/assets/logos/jackbot.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/JackBot">JackBot</a>
-                <tool-logo icon="javascript"></tool-logo>
-            </h3>
-            <p>A Discord Bot which I've developed for fun and to help out a community.</p>
-            <h4>What's nice about it?</h4>
-            <p>It's got no links to the community it was developed for and, therefore, can be used by anyone!</p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://github.com/Marco4413/YAGUI">
-                <img src="https://github.com/Marco4413/YAGUI/raw/master/screenshots/YAGUI_Note_1.gif">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/YAGUI">YAGUI</a>
-                <tool-logo icon="lua"></tool-logo>
-            </h3>
-            <p>My first ever big project.</p>
-            <p>It's a library for Minecraft's ComputerCraft mod. It tries to make GUI development easier with event/draw loops and pre-built GUI objects.</p>
-            <p>It shows its age but I still think it's nice to use.</p>
-        </div>
-    </div>
+    <project href="https://github.com/Marco4413/ProcessorEmulator"
+             logo-kind="image"
+             logo-url="/static/assets/logos/pemu.png">
+        <h3>
+            <a href="{href}">PEMU (Processor Emulator)</a>
+            <tool-logo icon="java"></tool-logo>
+        </h3>
+        <p>PEMU is an application written using Java and its Swing GUI Framework. It aims at 'emulating' how a processor would work.</p>
+        <p>It's basically a new programming language which works by mutating and reading (instructions/data) the contents of an array (memory).</p>
+        <p>A cool feature is that, since program and data are stored in the same place, a PEMU application can mutate itself through code. This feature is used to retrieve pointers from memory.</p>
+    </project>
+
+    <project href="https://github.com/Marco4413/MediaAsciifier"
+             logo-href="https://Marco4413.github.io/MediaAsciifier"
+             logo-kind="image"
+             logo-url="/static/assets/logos/media-asciifier.png">
+        <h3>
+            <a href="{href}">Media Asciifier</a>
+            <tool-logo icon="javascript"></tool-logo>
+        </h3>
+        <p>This is a Media to 'Ascii' (any text the browser supports) converter that works on the web.</p>
+        <p>It's able to convert images and <b>videos</b> at a decent speed, which allows real-time video conversion (and playback).</p>
+    </project>
+
+    <project href="https://github.com/Marco4413/Text2Image"
+             logo-kind="image"
+             logo-url="/static/assets/logos/t2i.png">
+        <h3>
+            <a href="https://github.com/Marco4413/Text2Image">Text2Image</a>
+            <tool-logo icon="python"></tool-logo>
+        </h3>
+        <p>This Python script and module allows for bulk text to image conversions.</p>
+        <p>It's original intent was to allow for easy generation of digits for smartwatches watchfaces.</p>
+        <p>However, it grew into an all-purpose script for generating all kinds of text. It may very well be my go-to logo generator for my projects!</p>
+    </project>
+
+    <project href="https://github.com/Marco4413/GeneratorCanvas"
+             logo-href="https://Marco4413.github.io/GeneratorCanvas"
+             logo-kind="canvas"
+             logo-id="project-generator-canvas">
+        <h3>
+            <a href="{href}">GeneratorCanvas</a>
+            <tool-logo icon="javascript"></tool-logo>
+        </h3>
+        <p>A JavaScript library inspired by <a href="https://github.com/motion-canvas/motion-canvas">Motion Canvas</a>.</p>
+        <p>It uses JS generators to render animations. This allows the programmer to keep the state of the animation within a function scope.</p>
+        <p>The 'logo' is rendered using the library. The animation is from the <a href="https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/">Sorting Algorithms example</a>.</p>
+    </project>
+
+    <project href="https://github.com/Marco4413/JackBot"
+             logo-kind="image"
+             logo-url="/static/assets/logos/jackbot.png">
+        <h3>
+            <a href="{href}">JackBot</a>
+            <tool-logo icon="javascript"></tool-logo>
+        </h3>
+        <p>A Discord Bot which I've developed for fun and to help out a community.</p>
+        <h4>What's nice about it?</h4>
+        <p>It's got no links to the community it was developed for and, therefore, can be used by anyone!</p>
+    </project>
+
+    <project href="https://github.com/Marco4413/YAGUI"
+             logo-kind="image"
+             logo-url="https://github.com/Marco4413/YAGUI/raw/master/screenshots/YAGUI_Note_1.gif">
+        <h3>
+            <a href="{href}">YAGUI</a>
+            <tool-logo icon="lua"></tool-logo>
+        </h3>
+        <p>My first ever big project.</p>
+        <p>It's a library for Minecraft's ComputerCraft mod. It tries to make GUI development easier with event/draw loops and pre-built GUI objects.</p>
+        <p>It shows its age but I still think it's nice to use.</p>
+    </project>
 
     <hr>
     <h2>Game Mods</h2>
+
+    <project href="https://github.com/Marco4413/CP77-BetterSleeves"
+             logo-href="https://www.nexusmods.com/cyberpunk2077/mods/10319"
+             logo-kind="image"
+             logo-url="/static/assets/logos/bettersleeves.png">
+        <h3>
+            <a href="{href}">CP77 - BetterSleeves</a>
+            <tool-logo icon="lua"></tool-logo>
+        </h3>
+        <p>A Cyberpunk 2077 mod which swaps FPP models with TPP ones that have Sleeves.</p>
+        <p>It's fully customizable with keybinds to swap manually, and blacklists for weapons, clothing items and missions!</p>
+    </project>
     
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://www.nexusmods.com/cyberpunk2077/mods/10319">
-                <img src="/static/assets/logos/bettersleeves.png">
-            </a>
+    <project href="https://github.com/Marco4413/CP77-DiscordRPC2"
+             logo-href="https://www.nexusmods.com/cyberpunk2077/mods/10831"
+             logo-kind="image"
+             logo-url="/static/assets/logos/discordrpc2.png">
+        <h3>
+            <a href="{href}">CP77 - DiscordRPC2</a>
+            <tool-logo icon="lua"></tool-logo>
+            <tool-logo icon="c++"></tool-logo>
+        </h3>
+        <p>Another Cyberpunk 2077 mod. This one adds Discord Rich Presence to the game.</p>
+        <div>
+            <p>This mod is split into 3 parts&colon;</p>
+            <ol>
+                <li>A <a href="https://github.com/WopsS/RED4ext">RED4ext</a> plugin which adds native redscript bindings to Discord's Game SDK.</li>
+                <li>A <a href="https://github.com/jac3km4/redscript">redscript</a> mod that exposes Discord's API as an IScriptable within the game.</li>
+                <li>A <a href="https://github.com/yamashi/CyberEngineTweaks">CyberEngineTweaks</a> mod that updates the Rich Presence through the IScriptable implemented within redscript.</li>
+            </ol>
         </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/CP77-BetterSleeves">CP77 - BetterSleeves</a>
-                <tool-logo icon="lua"></tool-logo>
-            </h3>
-            <p>A Cyberpunk 2077 mod which swaps FPP models with TPP ones that have Sleeves.</p>
-            <p>It's fully customizable with keybinds to swap manually, and blacklists for weapons, clothing items and missions!</p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://www.nexusmods.com/cyberpunk2077/mods/10831">
-                <img src="/static/assets/logos/discordrpc2.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/CP77-DiscordRPC2">CP77 - DiscordRPC2</a>
-                <tool-logo icon="lua"></tool-logo>
-                <tool-logo icon="c++"></tool-logo>
-            </h3>
-            <p>Another Cyberpunk 2077 mod. This one adds Discord Rich Presence to the game.</p>
-            <div>
-                <p>This mod is split into 3 parts&colon;</p>
-                <ol>
-                    <li>A <a href="https://github.com/WopsS/RED4ext">RED4ext</a> plugin which adds native redscript bindings to Discord's Game SDK.</li>
-                    <li>A <a href="https://github.com/jac3km4/redscript">redscript</a> mod that exposes Discord's API as an IScriptable within the game.</li>
-                    <li>A <a href="https://github.com/yamashi/CyberEngineTweaks">CyberEngineTweaks</a> mod that updates the Rich Presence through the IScriptable implemented within redscript.</li>
-                </ol>
-            </div>
-            <p>It supports different languages, and has a bunch of options!</p>
-        </div>
-    </div>
+        <p>It supports different languages, and has a bunch of options!</p>
+    </project>
 
     <hr>
     <h2>Other projects</h2>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://Marco4413.github.io/GameOfLife">
-                <img src="/static/assets/logos/gol.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/GameOfLife">Conway's Game Of Life</a>
-                <tool-logo icon="javascript"></tool-logo>
-            </h3>
-            <p>It's just <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>.</p>
-            <p>It uses <a href="https://github.com/Marco4413/wCanvas">wCanvas</a> to render the game.</p>
-        </div>
-    </div>
-    
-    <div class="project-container">
-        <div class="project-logo-container">
-            <a href="https://Marco4413.github.io/Fractals">
-                <img src="/static/assets/logos/fractals.png">
-            </a>
-        </div>
-        <div splitr></div>
-        <div class="project-description">
-            <h3>
-                <a href="https://github.com/Marco4413/Fractals">Fractals</a>
-                <tool-logo icon="javascript"></tool-logo>
-            </h3>
-            <p>A Fractal visualizer that runs on your GPU!</p>
-            <p>This was possible thanks to <a href="https://github.com/Marco4413/ThreeShaderCanvas">ThreeShaderCanvas</a>.</p>
-        </div>
-    </div>
+
+    <project href="https://github.com/Marco4413/GameOfLife"
+             logo-href="https://Marco4413.github.io/GameOfLife"
+             logo-kind="image"
+             logo-url="/static/assets/logos/gol.png">
+        <h3>
+            <a href="{href}">Conway's Game Of Life</a>
+            <tool-logo icon="javascript"></tool-logo>
+        </h3>
+        <p>It's just <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>.</p>
+        <p>It uses <a href="https://github.com/Marco4413/wCanvas">wCanvas</a> to render the game.</p>
+    </project>
+
+    <project href="https://github.com/Marco4413/Fractals"
+             logo-href="https://Marco4413.github.io/Fractals"
+             logo-kind="image"
+             logo-url="/static/assets/logos/fractals.png">
+        <h3>
+            <a href="{href}">Fractals</a>
+            <tool-logo icon="javascript"></tool-logo>
+        </h3>
+        <p>A Fractal visualizer that runs on your GPU!</p>
+        <p>This was possible thanks to <a href="https://github.com/Marco4413/ThreeShaderCanvas">ThreeShaderCanvas</a>.</p>
+    </project>
 </body>
 </html>
