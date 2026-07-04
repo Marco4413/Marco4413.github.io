@@ -1,6 +1,9 @@
 import * as a from "https://Marco4413.github.io/GeneratorCanvas/animation.js";
 import { Animatable, SortingAnimation } from "https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/sorting.js";
 
+import { MarkdownBuilder } from "./static/js/markdown-builder.js";
+/** @import { MarkdownOptions } from './static/js/markdown-builder.js'; */
+
 const MoveChildNodes = ($src, $dst) => {
     // Create a new array from childNodes because childNodes is live.
     // Changing it while iterating does not work.
@@ -63,11 +66,38 @@ const ReplaceWithProjectContainer = $el => {
 
     $projectContainer.appendChild($projectDescription);
     $el.replaceWith($projectContainer);
+    return $projectContainer;
 };
 
 window.addEventListener("load", () => {
+    const projects = [];
     document.querySelectorAll("project")
-        .forEach(ReplaceWithProjectContainer);
+        .forEach($el => projects.push(ReplaceWithProjectContainer($el)));
+
+    /** @type {MarkdownOptions} */
+    const markdownOptions = {
+        baseUrl: new URL(location.href),
+        getImageStyle: $img => {
+            if ($img.classList.contains("tool-logo") || ($img.parentElement != null && $img.parentElement.classList.contains("avatar-container"))) {
+                return {
+                    width: "24pt",
+                    style: "vertical-align: middle; width: 1.5em",
+                };
+            }
+            return {};
+        },
+    };
+
+    window.__PageToMarkdown = () => {
+        const builder = new MarkdownBuilder(markdownOptions);
+        return builder.WriteElement(document.body).Build();
+    };
+
+    window.__ProjectsToMarkdown = () => {
+        const builder = new MarkdownBuilder(markdownOptions);
+        projects.forEach($el => builder.WriteElement($el).WriteSeparator());
+        return builder.Build();
+    };
 
     const $generatorCanvas = document.getElementById("project-generator-canvas");
     const player = new a.AnimationPlayer($generatorCanvas);
