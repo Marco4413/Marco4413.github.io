@@ -78,11 +78,8 @@ window.addEventListener("load", () => {
     const markdownOptions = {
         baseUrl: new URL(location.href),
         getImageStyle: $img => {
-            if ($img.classList.contains("tool-logo") || ($img.parentElement != null && $img.parentElement.classList.contains("avatar-container"))) {
-                return {
-                    width: "24pt",
-                    style: "vertical-align: middle; width: 1.5em",
-                };
+            if ($img.classList.contains("tool-logo")) {
+                return { width: 16 };
             }
             return {};
         },
