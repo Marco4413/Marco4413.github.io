@@ -1,7 +1,7 @@
 /**
  * @typedef {object} MarkdownOptions
  * @property {URL|string} [baseUrl]
- * @property {($img: HTMLImageElement) => { width?: string, style?: string }} [getImageStyle]
+ * @property {($img: HTMLImageElement) => { width?: number, style?: string }} [getImageStyle]
  */
 
 /**
@@ -215,8 +215,8 @@ MarkdownBuilder
         const alt = $el.getAttribute("alt") ?? "";
         const src = $el.hasAttribute("src") ? self.ResolveUrl($el.getAttribute("src")) : "";
 
-        let width = "144pt";
-        let style = "width: 100%; max-width: 30%";
+        let width = 192;
+        let style = "";
 
         if (self.options.getImageStyle != null) {
             const imageStyle = self.options.getImageStyle($el);
@@ -224,5 +224,8 @@ MarkdownBuilder
             style = imageStyle.style ?? style;
         }
 
-        return self.WriteRaw(`<img src="${src}" alt="${alt}" width="${width}" style="${style}">`);
+        const aspectRatio = $el.naturalWidth > 0 ? $el.naturalHeight / $el.naturalWidth : 0;
+        const height = aspectRatio * width;
+
+        return self.WriteRaw(`<img src="${src}" alt="${alt}" width="${width}px" height="${height}px" style="${style}">`);
     });
