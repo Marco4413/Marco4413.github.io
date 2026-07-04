@@ -61,7 +61,11 @@ export class MarkdownBuilder {
     /** @param {string} text */
     WriteText(text) {
         const lastLine = this.#lines[this.#lines.length-1];
-        text = text.replaceAll(/\s+/g, " ");
+        text = text
+            // normalize whitespaces
+            .replaceAll(/\s+/g, " ")
+            // escape special characters
+            .replaceAll(/([\\`*_{}[\]()#+\-.!])/g, "\\$1");
         if (lastLine.length <= 0 || /\s$/.test(lastLine))
             text = text.trimStart();
         return this.WriteRaw(text);
