@@ -1,8 +1,3 @@
-import * as a from "https://Marco4413.github.io/GeneratorCanvas/animation.js";
-import { Animatable, SortingAnimation } from "https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/sorting.js";
-
-import { MarkdownBuilder } from "https://Marco4413.github.io/MarkdownBuilder/MarkdownBuilder.js";
-
 const MoveChildNodes = ($src, $dst) => {
     // Create a new array from childNodes because childNodes is live.
     // Changing it while iterating does not work.
@@ -69,59 +64,5 @@ const ReplaceWithProjectContainer = $el => {
 };
 
 window.addEventListener("load", () => {
-    const projects = [];
-    document.querySelectorAll("project")
-        .forEach($el => projects.push(ReplaceWithProjectContainer($el)));
-
-    const markdownOptions = {
-        baseUrl: new URL(location.href),
-        getImageStyle: $img => {
-            if ($img.classList.contains("tool-logo")) {
-                return { width: 16 };
-            }
-            return {};
-        },
-    };
-
-    window.__PageToMarkdown = () => {
-        const builder = new MarkdownBuilder(markdownOptions);
-        return builder.WriteElement(document.body).Build();
-    };
-
-    window.__ProjectsToMarkdown = () => {
-        const builder = new MarkdownBuilder(markdownOptions);
-        projects.forEach($el => builder.WriteElement($el).WriteSeparator());
-        return builder.Build();
-    };
-
-    const $generatorCanvas = document.getElementById("project-generator-canvas");
-    const player = new a.AnimationPlayer($generatorCanvas);
-
-    player.Resize(250, 250);
-    player.Play(GeneratorCanvasAnimation);
+    document.querySelectorAll("project").forEach(ReplaceWithProjectContainer);
 });
-
-function* GeneratorCanvasAnimation(c) {
-    let sorterI = 0;
-    // I could use Object.values(Animatable) but I want a specific order.
-    const sorters = [
-        Animatable.MergeSort,
-        Animatable.QuickSort,
-        Animatable.HeapSort,
-        Animatable.InsertionSort,
-        Animatable.BubbleSort,
-    ];
-
-    const sortOpt = {
-        sorter: sorters[sorterI],
-        updateDelay: 0.05,
-        itemCount: 16,
-        stopAtEnd: true,
-    };
-
-    while (true) {
-        yield* SortingAnimation(c, sortOpt)
-        sorterI = (sorterI+1) % sorters.length;
-        sortOpt.sorter = sorters[sorterI];
-    }
-}
