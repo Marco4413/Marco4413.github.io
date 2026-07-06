@@ -1,8 +1,7 @@
 import * as a from "https://Marco4413.github.io/GeneratorCanvas/animation.js";
 import { Animatable, SortingAnimation } from "https://Marco4413.github.io/GeneratorCanvas/examples/007-sorting_algorithms/sorting.js";
 
-import { MarkdownBuilder } from "./static/js/markdown-builder.js";
-/** @import { MarkdownOptions } from './static/js/markdown-builder.js'; */
+import { MarkdownBuilder } from "https://Marco4413.github.io/MarkdownBuilder/MarkdownBuilder.js";
 
 const MoveChildNodes = ($src, $dst) => {
     // Create a new array from childNodes because childNodes is live.
@@ -74,7 +73,6 @@ window.addEventListener("load", () => {
     document.querySelectorAll("project")
         .forEach($el => projects.push(ReplaceWithProjectContainer($el)));
 
-    /** @type {MarkdownOptions} */
     const markdownOptions = {
         baseUrl: new URL(location.href),
         getImageStyle: $img => {
